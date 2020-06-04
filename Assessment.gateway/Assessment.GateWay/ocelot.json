@@ -1,0 +1,22 @@
+{
+  "ReRoutes": [
+    {
+      "UpstreamPathTemplate": "/tax/{catchall}",
+      "DownstreamPathTemplate": "/api/{catchall}",
+      "DownstreamScheme": "http",
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "localhost",
+          "Port": 5020
+        }
+      ],
+      "AuthenticationOptions": {
+        "AuthenticationProviderKey": "TestKey",
+        "AllowedScopes": []
+      }
+    }
+  ],
+  "GlobalConfiguration": {
+    "BaseUrl": "http://localhost:5005"
+  }
+}
